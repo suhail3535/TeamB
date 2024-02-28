@@ -1,11 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .main_container{
+            border: 1px solid black;
+            width: 100%;
+            margin: auto;
+            background-color: rgb(20,20,57);
+        }
+        .main_container h2{
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+        }
+        .img_Container{
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+            margin: auto;
+            
+            width: 90%;
+        }
+        .img_Container div{
+            border-radius: 10px;
+            /* border: 1px solid green; */
+            overflow: hidden;
+          
+        }
+        .img_Container img{
+            width: 95%;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 1s ease-in-out;
+        }
+        .img_Container img:hover{
+            cursor: pointer;
+
+            transform: scale(1.1);     
+        }
+
+
+        @media screen and (min-width:300px) and (max-width:450px) {
+
+            .main_container{
+            border: 1px solid black;
+            width: 100%;
+            margin: auto;
+            background-color: rgb(20,20,57);
+        }
+        .main_container h2{
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+        }
+        .img_Container{
+            /* border: 1px solid red; */
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 20px;
+            margin: auto;
+            margin-left: 7%;
+            
+            width: 90%;
+        }
+        .img_Container div{
+            border-radius: 5px;
+            /* border: 1px solid green; */
+            overflow: hidden;
+          
+        }
+        .img_Container img{
+            width: 95%;
+            height: 100%;
+            border-radius: 10px;
+            transition: all 0.5s ease-in-out;
+        }
+        .img_Container img:hover{
+            
+            transform: scale(1.1);     
+        }
+
+            
+        }
+
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="main_container">
+        <h2>Photos Gallery</h2>
+        <div class="img_Container">
+        <div>
+            <img src="./gallery img 1.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 2.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 3.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 4.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 5.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 6.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 7.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 8.avif" alt="">
+        </div>
+        <div>
+            <img src="./gallery img 9.avif" alt="">
+        </div>
+    </div>
+
+    </div>
 </body>
+
 </html>
