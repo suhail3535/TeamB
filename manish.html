@@ -1,11 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <style>
+        /* *{
+            margin: o;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        body{
+            background-color: rgb(20,20,57);
+        }
+        nav{
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            background-color: rgb(0,128,255);
+        }
+        .p_div{
+            /* border:  1px solid red; */
+            display: flex;
+            justify-content: start;
+            width: 20%;
+            transition: all 1s ease-in-out;
+        }
+        .p_div:hover{
+            cursor: pointer;
+            transform: scale(1);
+        }
+        .p_one{
+            /* border:  1px solid gold; */
+            color: white;
+            /* width: 40%; */
+            height: 50%;
+            font-size:x-large;
+            font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        .p_two{
+            /* border: 1px solid salmon; */
+            color: rgb(207,168,99);
+            /* width: 50%; */
+            height: 50%;
+            font-size:x-large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        
+        .icon_div{
+            padding: 10px;
+            /* border: 1px solid lightgreen; */
+            width: 35%;
+            color: white;
+        }
+        .icon_div ul{
+            /* border: 1px solid rgb(210, 14, 14); */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            font-size: larger;
+            
+        }
+        .icon_div ul li:hover{
+            cursor: pointer;
+            color: rgb(207,168,99);
+        }
+        .menu_div{
+            /* border:  1px solid white; */
+            display: flex;
+            align-items: center;
+            width: 5%;
+            color: white;
+            font-size: x-large;
+            display: none;
+        }
+        .first_container{
+            /* border: 1px solid lightseagreen; */
+            /* width: 82.5%; */
+            margin: auto;
+            display: flex;
+            /* justify-content: space-evenly; */
+            padding: 90px;
+            /* background-color:rgb(20,20,57) */
+        }
+        .first_main{
+            /* border: 1px solid blue; */
+            display: flex;
+            /* align-items: center; */
+            width: 55%;
+            padding: 10px;
+        }
+        .first_flex{
+            /* border: 1px solid lawngreen; */
+            padding: 20px;
+            width: 90%;
+            margin: 150px ;
+        }
+       
+        #ptwo{
+            font-size: 45px;
+            color: white;
+            font-weight: bold;
+        }
+        #p{
+            color:rgb(251,177,15)
+        }
+        #pone{
+            color: rgb(175,175,208);
+        }
+       
+        .button{
+            /* border: 1px solid red; */
+            width: 20%;
+            padding: 20px;
+            /* height: 50px; */
+            text-align: center;
+            border-radius: 30px;
+            background-color: rgb(0,128,255);
+            color: whitesmoke;
+            font-size: larger;
+            transition: all 0.4s ease-in-out;
+        }
+        .button:hover{
+   cursor: pointer;
+   background-color: rgb(211,149,39);
+        }
+        .second_div{
+            /* border: 1px solid burlywood; */
+            width: 45%;
+            /* padding: 6%; */
+        }
+        .circle_div{
+            /* border: 1px solid rebeccapurple; */
+            /* height: 300px; */
+            width: 47%;
+            height: 350px;
+            border-radius: 50%;
+            background: rgb(193,136,43);
+background: linear-gradient(90deg, rgba(193,136,43,1) 0%, rgba(135,95,53,1) 35%, rgba(66,48,56,1) 100%);
+        }
+        .circle_div:hover{
+            cursor: pointer;
+            webkit-filter: blur(4px);
+            filter: blur(4px);
+        }
+        .image_div {
+            /* border: 1px solid salmon; */
+            position: relative;
+            bottom: 300px;
+            left: 50px;
+        }
+       @media screen and (min-width:200px) and (max-width:768px) {
+        .menu_div{
+            display: block;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        }
+        .menu_div:hover{
+            cursor: pointer;
+            color:rgb(251,177,15) ;
+        }
+        .icon_div{
+            display: none;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+        }
+        .first_container{
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 0px;
+        }
+        .first_main{
+            display: block;
+            width: 90%;
+            margin: auto;
+            padding: 0px;
+        }
+        .first_flex{
+            display: block;
+            text-align: center;
+            width: 90%;
+            margin: auto;
+        }
+       }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="p_div">
+        <p class="p_one">VAWU</p>
+        <p class="p_two">LENS</p>
+      </div>
+      <div class="icon_div">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Gallery</li>
+          <li>Plans</li>
+          <li>Trainers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="menu_div"><span>&#9776;</span></div>
+    </nav>
+    <div class="first_container">
+      <div class="first_main">
+      <div class="first_flex">  <p id="p">#100DaysOfWorkOut</p>
+        <p id="ptwo">
+          Join The Legands Of The <br />
+          Fitness World
+        </p>
+        <p id="pone">
+          It Was An Instant Hit. Vawulens's Gym Quickly Became Known As “The
+          Mecca Of Bodybuilding.'' In 1977, Vawulens's Gym Received
+          International Attention When It Was Featured In The Movie Pumping Iron
+          That Starred <br> Arnold Schwarzenegger And Lou Ferrigno. From That First
+          Gym In Venice, Vawulens's Gym Has Become The Largest Co-Ed Gym Chain
+          In The World With Over 700+ Clubs In 27 Countries. Today, Vawulens's
+          Gym Has Expanded Its Fitness Profile To Offer All Of The Latest 
+          Equipment And Services, Including Group Exercise, Personal Training,
+          Cardiovascular Equipment, Spinning, And Yoga, While Maintaining Its
+          Core Weight Lifting Tradition.
+        </p>
+        <div class="button">Get Started</div>
+    </div>
+    </div>
+    <div class="second_div">
+      <div class="circle_div"></div>
+      <div class="image_div"><img src="./gol gol.png" alt=""></div>
+    </div>
+</div>
+  </body>
 </html>
