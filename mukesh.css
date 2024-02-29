@@ -12,7 +12,7 @@ body {
 .program_card_main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 99%;
+    width: 100%;
     padding: 10px;
     /* border: 1px solid white; */
 
@@ -41,12 +41,15 @@ body {
 
 .program_card {
     /* border: 1px solid white; */
-    width: 72%;
-    text-align: center;
+    width: 70%;
+    text-align: left;
+    /* border: 2px solid red; */
     background-color: rgba(71, 71, 163, 0.315);
     border-radius: 0px 50px;
     transition: all 1s ease-in-out;
     padding: 30px;
+    cursor: pointer;
+
 }
 
 .program_card:hover {
@@ -60,8 +63,9 @@ body {
     border-radius: 10px;
     margin-top: 20px;
     margin-right: 10px;
-    margin-left: 120px;
+    /* margin-left: 120px; */
     width: 40px;
+    /* border: 2px solid red;/ */
     height: 40px;
     color: rgb(175, 175, 208);
     background-color: rgb(0, 128, 255);
@@ -85,6 +89,7 @@ body {
     border-radius: 20px;
     width: 130px;
     border: none;
+    cursor: pointer;
 }
 
 .program_card button:hover {
@@ -149,15 +154,15 @@ body {
         width: 100%;
         margin: auto;
     }
-    
+
     .program_card_main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
        margin:10px auto;
-    
+
     }
-    
+
     .program_card {
         width: 95%;
         margin:10px auto;
@@ -169,23 +174,23 @@ body {
     .about_main {
         width: 100%;
     }
-    
+
     .about_main h1 {
         font-size: x-large;
     }
-    
+
     .about_main1 {
         display: block;
     }
-    
+
     .about_img {
         width: 95%;
     }
-    
+
     .about_para {
         width: 95%;
     }
-    
+
     .about_para p {
         font-size: small;
     }
