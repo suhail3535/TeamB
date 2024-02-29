@@ -1,0 +1,163 @@
+.Contact_details{
+    background-color:rgb(20,20,57);
+     display: flex;
+     justify-content: space-between;
+     padding: 60px;
+ }
+ .contactus{
+    display: flex;
+    justify-content: center;
+ }
+ span{
+    
+    color: white;
+    font-size: 45px;
+    margin-left: 10px;
+    padding-top: 48px;
+ }
+ h1{
+     font-size: 60px;
+     color: white;
+ }
+input{
+width: 706px;
+height: 30px;
+border-radius: 10px;
+font-size: large;
+padding-left: 20px;
+}
+textarea{
+height: 140px;
+width: 706px;
+border-radius: 10px;
+font-size: large;
+padding-left: 20px;
+
+}
+button{
+height: 50px ;
+width: 30%;
+margin-top: 20px;
+border-radius: 10px;
+color: white;
+background-color: rgb(65, 119, 228);
+font-size: 20px;
+transition: all 1s ease-in;
+}
+button:hover{
+cursor: pointer;
+background-color: orange;
+}
+img{
+height: 600px;
+width: 850px;
+border-radius: 15px;
+
+}
+.contact_img{
+padding: 120px;
+transition: all 4s ease-in;
+
+}
+
+@media screen and (min-width:280px) and (max-width:480px) {
+.Contact_details{
+    background-color:rgb(20,20,57);
+     display: flex;
+     flex-direction: column-reverse;
+ }
+ span{
+    
+    color: white;
+    font-size: 35px;
+    margin-left: 10px;
+    padding-top: 28px;
+ }
+ h1{
+     font-size: 40px;
+     color: white;
+     text-align: center;
+ }
+input{
+width: 250px;
+height: 30px;
+
+}
+textarea{
+height: 140px;
+width: 250px;
+
+
+}
+
+
+img{
+height: 200px;
+width: 270px;
+border-radius: 15px;
+
+}
+.contact_img{
+padding: 00px;
+transition: all 4s ease-in;
+margin-top: 20px;
+
+}
+.button{
+text-align: center;
+}
+button{
+width: 70%;
+}
+
+
+}
+@media screen and (min-width:421px) and (max-width:768px) {
+.Contact_details{
+    background-color:rgb(20,20,57);
+     display: flex;
+     flex-direction: column-reverse;
+ }
+ span{
+    
+    color: white;
+    font-size: 45px;
+    margin-left: 10px;
+    padding-top: 20px;
+ }
+ h1{
+     font-size: 40px;
+     color: white;
+     text-align: center;
+ }
+input{
+width: 600px;
+height: 30px;
+
+}
+textarea{
+height: 140px;
+width: 600px;  
+}
+
+img{
+height: 280px;
+width: 600px;
+border-radius: 15px;
+
+}
+.contact_img{
+padding: 00px;
+
+margin-top: 10px;
+
+}
+.button{
+text-align: center;
+}
+button{
+width: 80%;
+}
+
+
+}
