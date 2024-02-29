@@ -1,0 +1,192 @@
+body {
+    background-color: rgb(20, 20, 57);
+}
+
+.programs {
+    width: 80%;
+    margin: auto;
+    /* border: 1px solid white; */
+    padding-top: 7px;
+}
+
+.program_card_main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 99%;
+    padding: 10px;
+    /* border: 1px solid white; */
+
+}
+
+.programs1 {
+    color: white;
+    display: flex;
+    padding: 5px;
+    /* border: 1px solid white; */
+    width: 100%;
+}
+
+.programs1 span {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    color: rgb(251, 177, 22);
+    background-color: rgb(232, 233, 247);
+    font-size: xx-large;
+    display: grid;
+    place-items: center;
+}
+
+.program_card {
+    /* border: 1px solid white; */
+    width: 72%;
+    text-align: center;
+    background-color: rgba(71, 71, 163, 0.315);
+    border-radius: 0px 50px;
+    transition: all 1s ease-in-out;
+    padding: 30px;
+}
+
+.program_card:hover {
+    transform: scale(1.1);
+    background-color: rgb(20, 20, 57);
+    border: 1px solid rgb(185, 176, 176);
+
+}
+
+.program_card span {
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 120px;
+    width: 40px;
+    height: 40px;
+    color: rgb(175, 175, 208);
+    background-color: rgb(0, 128, 255);
+    font-size: xx-large;
+    display: grid;
+    place-items: center;
+}
+
+.program_card h3 {
+    color: rgb(190, 213, 249);
+}
+
+.program_card p {
+    color: rgb(159, 123, 163);
+}
+
+.program_card button {
+    background-color: rgb(0, 128, 255);
+    color: rgb(232, 233, 247);
+    padding: 10px;
+    border-radius: 20px;
+    width: 130px;
+    border: none;
+}
+
+.program_card button:hover {
+    color: rgb(0, 128, 255);
+    background-color: rgb(232, 233, 247);
+}
+
+.about_main {
+    width: 100%;
+    /* border: 2px solid rgb(22, 112, 148); */
+
+}
+
+.about_main h1 {
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.about_main1 {
+    /* border: 2px solid rgb(22, 112, 148); */
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    width: 100%;
+}
+
+.about_img {
+    width: 55%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.about_para {
+    width: 45%;
+}
+
+.about_img img {
+    /* border: 2px solid salmon; */
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+.about_img img:hover {
+    /* border: 2px solid salmon; */
+    transform: scale(1.1);
+}
+
+.about_para p {
+    /* border: 2px solid salmon; */
+    color: rgba(255, 255, 255, 0.466);
+    text-align: justify;
+    font-size: large;
+}
+
+.about_para p:hover {
+    color: rgba(255, 255, 255, 0.836);
+}
+
+@media screen and (min-width:150px) and (max-width:400px) {
+    .programs {
+        width: 100%;
+        margin: auto;
+    }
+    
+    .program_card_main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+       margin:10px auto;
+    
+    }
+    
+    .program_card {
+        width: 95%;
+        margin:10px auto;
+        padding: 5px;
+    }
+    .program_card span {
+        margin-left: 140px;
+    }
+    .about_main {
+        width: 100%;
+    }
+    
+    .about_main h1 {
+        font-size: x-large;
+    }
+    
+    .about_main1 {
+        display: block;
+    }
+    
+    .about_img {
+        width: 95%;
+    }
+    
+    .about_para {
+        width: 95%;
+    }
+    
+    .about_para p {
+        font-size: small;
+    }
+}
