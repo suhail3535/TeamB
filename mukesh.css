@@ -85,6 +85,7 @@ body {
     border-radius: 20px;
     width: 130px;
     border: none;
+    margin: 10px;
 }
 
 .program_card button:hover {
@@ -144,48 +145,99 @@ body {
     color: rgba(255, 255, 255, 0.836);
 }
 
-@media screen and (min-width:150px) and (max-width:400px) {
+@media screen and (min-width:200px) and (max-width:420px) {
     .programs {
         width: 100%;
         margin: auto;
     }
-    
+
     .program_card_main {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
-       margin:10px auto;
-    
+        margin: 10px auto;
+
     }
-    
+
     .program_card {
         width: 95%;
-        margin:10px auto;
+        margin: 10px auto;
         padding: 5px;
     }
-    .program_card span {
+
+    /* .program_card span {
         margin-left: 140px;
-    }
+    } */
+
     .about_main {
         width: 100%;
     }
-    
+
     .about_main h1 {
         font-size: x-large;
     }
-    
+
     .about_main1 {
         display: block;
     }
-    
+
     .about_img {
         width: 95%;
     }
-    
+
     .about_para {
         width: 95%;
     }
-    
+
+    .about_para p {
+        font-size: small;
+    }
+}
+
+@media screen and (min-width:421px) and (max-width:768px) {
+    .programs {
+        width: 100%;
+        margin: auto;
+    }
+
+    .program_card_main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+        margin: 10px auto;
+        gap: 30px;
+    }
+
+    .program_card {
+        width: 95%;
+        margin: 10px auto;
+        padding: 5px;
+    }
+
+    .program_card span {
+        margin-left: 140px;
+    }
+
+    .about_main {
+        width: 100%;
+    }
+
+    .about_main h1 {
+        font-size: x-large;
+    }
+
+    .about_main1 {
+        display: block;
+    }
+
+    .about_img {
+        width: 95%;
+    }
+
+    .about_para {
+        width: 95%;
+    }
+
     .about_para p {
         font-size: small;
     }
