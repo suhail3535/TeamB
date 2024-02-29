@@ -1,11 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+            font-size: 50px;
+        }
+
+        .package_main {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .package_div {
+            /* border: 1px solid rgb(161, 85, 85); */
+            width: 27%;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 35px;
+            background-color: rgb(35, 35, 92);
+            color: white;
+            height: 150px;
+            font-size: 20px;
+            padding: 20px;
+
+
+        }
+
+        .package_div:hover {
+            cursor: pointer;
+            border: 1px solid rgb(241, 237, 237);
+            transform: scale(1.1);
+            transition: all 0.8s ease-in-out;
+        }
+
+        .package_div h5 {
+            margin-left: 8px;
+            margin-top: -15px;
+        }
+
+        .package_div h2 {
+            margin-left: 8px;
+
+        }
+
+        .trainers_div {
+            /* border: 1px solid black; */
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 50px;
+            margin-top: 50px;
+            margin: auto;
+
+
+
+        }
+
+        .trainers_div img {
+            width: 400px;
+            border-radius: 20px;
+            margin-top: 30px;
+            transition: all 0.8s ease-in-out;
+
+        }
+
+
+        .trainers_div div {
+            /* margin-left: 130px; */
+
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            background-color: rgb(35, 35, 92);
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            color: white;
+            overflow: hidden;
+        }
+
+        .trainer_1 h2 {
+            margin-top: 5px;
+
+        }
+
+        .trainers_div p {
+            margin-top: -15px;
+        }
+
+        .trainers_div div:hover {
+            cursor: pointer;
+            border: 2px solid rgb(241, 237, 237);
+
+
+
+        }
+
+        .trainers_div img:hover {
+            cursor: pointer;
+            /* border: 3px solid rgb(219, 5, 5); */
+            transform: scale(1.1);
+        }
+
+        .main_div {
+            background-color: rgb(20, 20, 57);
+            height: 100%;
+
+        }
+
+        @media screen and (min-width:200px) and (max-width:420px) {
+            h1 {
+                text-align: center;
+                margin-top: 50px;
+                color: white;
+                font-size: 50px;
+            }
+
+            .package_main {
+                /* border: 2px solid black; */
+                display: block;
+                /* justify-content: space-evenly; */
+                margin: auto;
+                /* height: 300px; */
+
+            }
+
+            .package_div {
+                /* border: 1px solid rgb(161, 85, 85); */
+                width: 55%;
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 35px;
+                background-color: rgb(35, 35, 92);
+                color: white;
+                height: 150px;
+                font-size: 20px;
+                padding: 20px;
+                margin: auto;
+                gap: 50px;
+                height: 200px;
+                overflow: hidden;
+                margin-top: 50px;
+
+
+            }
+
+            .package_div:hover {
+                cursor: pointer;
+                border: 1px solid rgb(241, 237, 237);
+                transform: scale(1.1);
+                transition: all 0.8s ease-in-out;
+            }
+
+            .package_div h5 {
+                margin-left: 8px;
+                margin-top: -15px;
+            }
+
+            .package_div h2 {
+                margin-left: 8px;
+            }
+
+            .trainers_div {
+                /* border: 1px solid black; */
+                width: 90%;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 50px;
+                margin-top: 50px;
+                margin: auto;
+            }
+
+            .trainers_div img {
+                width: 180px;
+                border-radius: 20px;
+                margin-top: 30px;
+                transition: all 0.8s ease-in-out;
+            }
+
+            .trainers_div div {
+                /* margin-left: 130px; */
+                width: 100%;
+                margin: auto;
+                text-align: center;
+                background-color: rgb(35, 35, 92);
+                border-top-right-radius: 50px;
+                border-bottom-left-radius: 50px;
+                color: white;
+                overflow: hidden;
+            }
+
+            .trainer_1 h2 {
+                margin-top: 5px;
+            }
+
+            .trainers_div p {
+                margin-top: -15px;
+            }
+
+            .trainers_div div:hover {
+                cursor: pointer;
+                border: 2px solid rgb(241, 237, 237);
+            }
+
+            .trainers_div img:hover {
+                cursor: pointer;
+                /* border: 3px solid rgb(219, 5, 5); */
+                transform: scale(1.1);
+            }
+
+            .main_div {
+                background-color: rgb(20, 20, 57);
+                height: 100%;
+            }
+        }
+
+
+@media screen and (min-width:421px) and (max-width:768px) {
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        font-size: 50px;
+    }
+    .package_main {
+        /* border: 2px solid black; */
+        display: block;
+        /* justify-content: space-evenly; */
+        margin: auto;
+        /* height: 300px; */
+    }
+    .package_div {
+        /* border: 1px solid rgb(161, 85, 85); */
+        width: 55%;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 35px;
+        background-color: rgb(35, 35, 92);
+        color: white;
+        height: 150px;
+        font-size: 20px;
+        padding: 20px;
+        margin: auto;
+        gap: 50px;
+        height: 200px;
+        overflow: hidden;
+        margin-top: 50px;
+    }
+    .package_div:hover {
+        cursor: pointer;
+        border: 1px solid rgb(241, 237, 237);
+        transform: scale(1.1);
+        transition: all 0.8s ease-in-out;
+    }
+    .package_div h5 {
+        margin-left: 8px;
+        margin-top: -15px;
+    }
+    .package_div h2 {
+        margin-left: 8px;
+    }
+    .trainers_div {
+        /* border: 1px solid black; */
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+        margin-top: 50px;
+        margin: auto;
+    }
+    .trainers_div img {
+        width: 250px;
+        border-radius: 20px;
+        margin-top: 30px;
+        transition: all 0.8s ease-in-out;
+    }
+    .trainers_div div {
+        /* margin-left: 130px; */
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        background-color: rgb(35, 35, 92);
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        color: white;
+        overflow: hidden;
+    }
+    .trainer_1 h2 {
+        margin-top: 5px;
+    }
+    .trainers_div p {
+        margin-top: -15px;
+    }
+    .trainers_div div:hover {
+        cursor: pointer;
+        border: 2px solid rgb(241, 237, 237);
+    }
+    .trainers_div img:hover {
+        cursor: pointer;
+        /* border: 3px solid rgb(219, 5, 5); */
+        transform: scale(1.1);
+    }
+    .main_div {
+        background-color: rgb(20, 20, 57);
+        height: 100%;
+    }
+}
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="main_div">
+        <h1>Our Plans</h1>
+        <div class="package_main">
+            <div class="package_div">
+                <h2>Silver Package</h2>
+                <h5>This package is perfect for Beginners Who need constant Help</h5>
+                <h5>Price:$29.99</h5>
+            </div>
+            <div class="package_div">
+                <h2>Gold Package</h2>
+                <h5>This is the perfect package for beginners who know what their doing</h5>
+                <h5>Price:$49.99</h5>
+            </div>
+            <div class="package_div">
+                <h2>Platinum Package</h2>
+                <h5>This package is perfect for busy people Who need home service</h5>
+                <h5>Price:$89.99</h5>
+            </div>
+
+        </div>
+        <h1>Meet Our Trainers</h1>
+        <div class="trainers_div">
+            <div><img src="./john img.jpg"
+                    alt="">
+                <h2>John Doe</h2>
+                <p>Aerobic Trainer</p>
+            </div>
+            <div><img src="./denial img.jpg"
+                    alt="">
+                <h2>Daniel Vinyo</h2>
+                <p>Speed Trainer</p>
+            </div>
+            <div><img src="./edem img.jpg"
+                    alt="">
+                <h2>Edem Quist</h2>
+                <p>Flexibility Trainer</p>
+            </div>
+            <div><img src="./shatta img.jpg"
+                    alt="">
+                <h2>Shatta Wale</h2>
+                <p>Body Composition Trainer</p>
+            </div>
+            <div><img src="./diana img.jpg"
+                    alt="">
+                <h2>Diana Ayi</h1>
+                    <p>Circuit Trainer</p>
+            </div>
+            <div><img src="./wayne img.jpg"
+                    alt="">
+                <h2>Wayne Carter</h2>
+                <p>Physical Intelligence Trainer</p>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
