@@ -9,7 +9,7 @@
     justify-content: center;
  }
  span{
-    
+
     color: white;
     font-size: 45px;
     margin-left: 10px;
@@ -67,7 +67,7 @@ transition: all 4s ease-in;
      flex-direction: column-reverse;
  }
  span{
-    
+
     color: white;
     font-size: 35px;
     margin-left: 10px;
@@ -119,7 +119,7 @@ width: 70%;
      flex-direction: column-reverse;
  }
  span{
-    
+
     color: white;
     font-size: 45px;
     margin-left: 10px;
@@ -137,7 +137,7 @@ height: 30px;
 }
 textarea{
 height: 140px;
-width: 600px;  
+width: 600px;
 }
 
 img{
