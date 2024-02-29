@@ -1,252 +1,796 @@
 body {
-    background-color: rgb(20, 20, 57);
+  background-color: rgb(20, 20, 57);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .programs {
-    width: 80%;
-    margin: auto;
-    /* border: 1px solid white; */
-    padding-top: 7px;
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid white; */
+  padding-top: 7px;
 }
 
 .program_card_main {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    padding: 10px;
-    /* border: 1px solid white; */
-
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 10px;
+  /* border: 1px solid white; */
 }
 
 .programs1 {
-    color: white;
-    display: flex;
-    padding: 5px;
-    /* border: 1px solid white; */
-    width: 100%;
+  color: white;
+  display: flex;
+  padding: 5px;
+  /* border: 1px solid white; */
+  width: 100%;
 }
 
 .programs1 span {
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
-    width: 50px;
-    height: 50px;
-    color: rgb(251, 177, 22);
-    background-color: rgb(232, 233, 247);
-    font-size: xx-large;
-    display: grid;
-    place-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  color: rgb(251, 177, 22);
+  background-color: rgb(232, 233, 247);
+  font-size: xx-large;
+  display: grid;
+  place-items: center;
 }
 
 .program_card {
-    /* border: 1px solid white; */
-    width: 70%;
-    text-align: left;
-    /* border: 2px solid red; */
-    background-color: rgba(71, 71, 163, 0.315);
-    border-radius: 0px 50px;
-    transition: all 1s ease-in-out;
-    padding: 30px;
-    cursor: pointer;
-
+  /* border: 1px solid white; */
+  width: 70%;
+  text-align: left;
+  /* border: 2px solid red; */
+  background-color: rgba(71, 71, 163, 0.315);
+  border-radius: 0px 50px;
+  transition: all 1s ease-in-out;
+  padding: 30px;
+  cursor: pointer;
 }
 
 .program_card:hover {
-    transform: scale(1.1);
-    background-color: rgb(20, 20, 57);
-    border: 1px solid rgb(185, 176, 176);
-cursor: pointer;
+  transform: scale(1.1);
+  background-color: rgb(20, 20, 57);
+  border: 1px solid rgb(185, 176, 176);
+  cursor: pointer;
 }
 
 .program_card span {
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-right: 10px;
-    /* margin-left: 120px; */
-    width: 40px;
-    /* border: 2px solid red;/ */
-    height: 40px;
-    color: rgb(175, 175, 208);
-    background-color: rgb(0, 128, 255);
-    font-size: xx-large;
-    display: grid;
-    place-items: center;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 10px;
+  /* margin-left: 120px; */
+  width: 40px;
+  /* border: 2px solid red;/ */
+  height: 40px;
+  color: rgb(175, 175, 208);
+  background-color: rgb(0, 128, 255);
+  font-size: xx-large;
+  display: grid;
+  place-items: center;
 }
 
 .program_card h3 {
-    color: rgb(190, 213, 249);
+  color: rgb(190, 213, 249);
 }
 
 .program_card p {
-    color: rgb(159, 123, 163);
+  color: rgb(159, 123, 163);
 }
 
 .program_card button {
-    background-color: rgb(0, 128, 255);
-    color: rgb(232, 233, 247);
-    padding: 10px;
-    border-radius: 20px;
-    width: 130px;
-    border: none;
-    margin: 10px;
+  background-color: rgb(0, 128, 255);
+  color: rgb(232, 233, 247);
+  padding: 10px;
+  border-radius: 20px;
+  width: 130px;
+  border: none;
+  margin: 10px;
 }
 
 .program_card button:hover {
-    color: rgb(0, 128, 255);
-    background-color: rgb(232, 233, 247);
-    cursor: pointer;
+  color: rgb(0, 128, 255);
+  background-color: rgb(232, 233, 247);
+  cursor: pointer;
 }
 
 .about_main {
-    width: 100%;
-    /* border: 2px solid rgb(22, 112, 148); */
-
+  width: 100%;
+  /* border: 2px solid rgb(22, 112, 148); */
 }
 
 .about_main h1 {
-    color: white;
-    text-align: center;
-    font-size: xx-large;
+  color: white;
+  text-align: center;
+  font-size: xx-large;
 }
 
 .about_main1 {
-    /* border: 2px solid rgb(22, 112, 148); */
-    display: flex;
-    gap: 50px;
-    padding: 10px;
-    width: 100%;
+  /* border: 2px solid rgb(22, 112, 148); */
+  display: flex;
+  gap: 50px;
+  padding: 10px;
+  width: 100%;
 }
 
 .about_img {
-    width: 55%;
-    overflow: hidden;
-    border-radius: 20px;
+  width: 55%;
+  overflow: hidden;
+  border-radius: 20px;
 }
 
 .about_para {
-    width: 45%;
+  width: 45%;
 }
 
 .about_img img {
-    /* border: 2px solid salmon; */
-    width: 100%;
-    height: 100%;
-    transition: all 1s ease-in-out;
+  /* border: 2px solid salmon; */
+  width: 100%;
+  height: 100%;
+  transition: all 1s ease-in-out;
 }
 
 .about_img img:hover {
-    /* border: 2px solid salmon; */
-    transform: scale(1.1);
-    cursor: pointer;
+  /* border: 2px solid salmon; */
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .about_para p {
-    /* border: 2px solid salmon; */
-    color: rgba(255, 255, 255, 0.466);
-    text-align: justify;
-    font-size: large;
+  /* border: 2px solid salmon; */
+  color: rgba(255, 255, 255, 0.466);
+  text-align: justify;
+  font-size: large;
 }
 
 .about_para p:hover {
-    color: rgba(255, 255, 255, 0.836);
-    cursor: pointer;
+  color: rgba(255, 255, 255, 0.836);
+  cursor: pointer;
 }
 
-@media screen and (min-width:200px) and (max-width:420px) {
-    .programs {
-        width: 100%;
-        margin: auto;
-    }
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  .programs {
+    width: 100%;
+    margin: auto;
+  }
 
-    .program_card_main {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        width: 90%;
-       margin:10px auto;
+  .program_card_main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+    margin: 10px auto;
+  }
 
-    }
+  .program_card {
+    width: 95%;
+    margin: 10px auto;
+    padding: 5px;
+  }
 
-    .program_card {
-        width: 95%;
-        margin: 10px auto;
-        padding: 5px;
-    }
-
-    /* .program_card span {
+  /* .program_card span {
         margin-left: 140px;
     } */
 
-    .about_main {
-        width: 100%;
-    }
+  .about_main {
+    width: 100%;
+  }
 
-    .about_main h1 {
-        font-size: x-large;
-    }
+  .about_main h1 {
+    font-size: x-large;
+  }
 
-    .about_main1 {
-        display: block;
-    }
+  .about_main1 {
+    display: block;
+  }
 
-    .about_img {
-        width: 95%;
-    }
+  .about_img {
+    width: 95%;
+  }
 
-    .about_para {
-        width: 95%;
-    }
+  .about_para {
+    width: 95%;
+  }
 
-    .about_para p {
-        font-size: small;
-    }
+  .about_para p {
+    font-size: small;
+  }
 }
 
-@media screen and (min-width:421px) and (max-width:768px) {
-    .programs {
-        width: 100%;
-        margin: auto;
-    }
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .programs {
+    width: 100%;
+    margin: auto;
+  }
 
-    .program_card_main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 90%;
-        margin: 10px auto;
-        gap: 30px;
-    }
+  .program_card_main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    margin: 10px auto;
+    gap: 30px;
+  }
 
-    .program_card {
-        width: 95%;
-        margin: 10px auto;
-        padding: 5px;
-    }
+  .program_card {
+    width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+  }
 
-    .program_card span {
-        margin-left: 140px;
-    }
+  .program_card span {
+    margin-left: 140px;
+  }
 
-    .about_main {
-        width: 100%;
-    }
+  .about_main {
+    width: 100%;
+  }
 
-    .about_main h1 {
-        font-size: x-large;
-    }
+  .about_main h1 {
+    font-size: x-large;
+  }
 
-    .about_main1 {
-        display: block;
-    }
+  .about_main1 {
+    display: block;
+  }
 
-    .about_img {
-        width: 95%;
-    }
+  .about_img {
+    width: 95%;
+  }
 
-    .about_para {
-        width: 95%;
-    }
+  .about_para {
+    width: 95%;
+  }
 
-    .about_para p {
-        font-size: small;
-    }
+  .about_para p {
+    font-size: 30px;
+    padding: 15px;
+  }
+}
+/* <-----------manish css-------------> */
+
+nav {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(0, 128, 255);
+}
+.p_div {
+  /* border:  1px solid red; */
+  display: flex;
+  justify-content: start;
+  width: 20%;
+  transition: all 1s ease-in-out;
+}
+.p_div:hover {
+  cursor: pointer;
+  transform: scale(1);
+}
+.p_one {
+  /* border:  1px solid gold; */
+  color: white;
+  /* width: 40%; */
+  height: 50%;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.p_two {
+  /* border: 1px solid salmon; */
+  color: rgb(207, 168, 99);
+  /* width: 50%; */
+  height: 50%;
+  font-size: x-large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.icon_div {
+  padding: 10px;
+  /* border: 1px solid lightgreen; */
+  width: 35%;
+  color: white;
+}
+.icon_div ul {
+  /* border: 1px solid rgb(210, 14, 14); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: larger;
+}
+.icon_div ul li:hover {
+  cursor: pointer;
+  color: rgb(207, 168, 99);
+}
+.menu_div {
+  /* border:  1px solid white; */
+  display: flex;
+  align-items: center;
+  width: 5%;
+  color: white;
+  font-size: x-large;
+  display: none;
+}
+.first_container {
+  /* border: 1px solid lightseagreen; */
+  /* width: 82.5%; */
+  margin: auto;
+  display: flex;
+  /* justify-content: space-evenly; */
+  padding: 90px;
+  /* background-color:rgb(20,20,57) */
+}
+.first_main {
+  /* border: 1px solid blue; */
+  display: flex;
+  /* align-items: center; */
+  width: 55%;
+  padding: 10px;
+}
+.first_flex {
+  /* border: 1px solid lawngreen; */
+  padding: 20px;
+  width: 90%;
+  margin: 150px;
+}
+
+#ptwo {
+  font-size: 45px;
+  color: white;
+  font-weight: bold;
+}
+#p {
+  color: rgb(251, 177, 15);
+}
+#pone {
+  color: rgb(175, 175, 208);
+}
+
+.button {
+  /* border: 1px solid red; */
+  width: 25%;
+  padding: 20px;
+  /* height: 50px; */
+  text-align: center;
+  border-radius: 30px;
+  background-color: rgb(0, 128, 255);
+  color: whitesmoke;
+  font-size: larger;
+  transition: all 0.4s ease-in-out;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgb(211, 149, 39);
+}
+.second_div {
+  /* border: 1px solid rgb(3, 248, 97); */
+  width: 45%;
+  /* padding: 6%; */
+}
+.circle_div {
+  /* border: 1px solid rebeccapurple; */
+  /* height: 300px; */
+  width: 47%;
+  height: 350px;
+  border-radius: 50%;
+  background: rgb(193, 136, 43);
+  background: linear-gradient(
+    90deg,
+    rgba(193, 136, 43, 1) 0%,
+    rgba(135, 95, 53, 1) 35%,
+    rgba(66, 48, 56, 1) 100%
+  );
+}
+.circle_div:hover {
+  cursor: pointer;
+  webkit-filter: blur(4px);
+  filter: blur(4px);
+}
+.image_div {
+  /* border: 1px solid salmon; */
+  position: relative;
+  bottom: 300px;
+  left: 50px;
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  .menu_div {
+    display: block;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  .menu_div:hover {
+    cursor: pointer;
+    color: rgb(251, 177, 15);
+  }
+  .icon_div {
+    display: none;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  .first_container {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+  }
+  .first_main {
+    display: block;
+    width: 90%;
+    margin: auto;
+    padding: 0px;
+  }
+  .first_flex {
+    display: block;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    line-height: opx;
+  }
+  .button {
+    margin: auto;
+  }
+
+  .second_div {
+    display: block;
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .circle_div {
+    display: block;
+    width: 55%;
+    margin: auto;
+  }
+  .image_div {
+    display: block;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    bottom: 230px;
+    left: -70px;
+  }
+  #p {
+    font-size: 20px;
+  }
+  #pone {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  .main_container {
+    border: 1px solid black;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(20, 20, 57);
+  }
+  .main_container h2 {
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+  }
+  .img_Container {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0;
+    /* padding: 20px; */
+    width: 100%;
+  }
+  .img_Container div {
+    border-radius: 5px;
+    /* border: 1px solid green; */
+    overflow: hidden;
+    width: 95%;
+    margin: auto;
+  }
+  .img_Container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  .img_Container img:hover {
+    transform: scale(1.1);
+  }
+}
+
+/* <------------mohit css----------> */
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: white;
+  font-size: 50px;
+}
+
+.package_main {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.package_div {
+  /* border: 1px solid rgb(161, 85, 85); */
+  width: 27%;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 35px;
+  background-color: rgb(35, 35, 92);
+  color: white;
+  height: 150px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.package_div:hover {
+  cursor: pointer;
+  border: 1px solid rgb(241, 237, 237);
+  transform: scale(1.1);
+  transition: all 0.8s ease-in-out;
+}
+
+.package_div h5 {
+  margin-left: 8px;
+  margin-top: -15px;
+}
+
+.package_div h2 {
+  margin-left: 8px;
+}
+
+.trainers_div {
+  /* border: 1px solid black; */
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 50px;
+  margin-top: 50px;
+  margin: auto;
+}
+
+.trainers_div img {
+  width: 400px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.8s ease-in-out;
+}
+
+.trainers_div div {
+  /* margin-left: 130px; */
+
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(35, 35, 92);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  color: white;
+  overflow: hidden;
+}
+
+.trainer_1 h2 {
+  margin-top: 5px;
+}
+
+.trainers_div p {
+  margin-top: -15px;
+}
+
+.trainers_div div:hover {
+  cursor: pointer;
+  border: 2px solid rgb(241, 237, 237);
+}
+
+.trainers_div img:hover {
+  cursor: pointer;
+  /* border: 3px solid rgb(219, 5, 5); */
+  transform: scale(1.1);
+}
+
+.main_div {
+  background-color: rgb(20, 20, 57);
+  height: 100%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 420px) {
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+  }
+
+  .package_main {
+    /* border: 2px solid black; */
+    display: block;
+    /* justify-content: space-evenly; */
+    margin: auto;
+    /* height: 300px; */
+  }
+
+  .package_div {
+    /* border: 1px solid rgb(161, 85, 85); */
+    width: 70%;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 35px;
+    background-color: rgb(35, 35, 92);
+    color: white;
+    height: 150px;
+    font-size: 20px;
+    padding: 20px;
+    margin: auto;
+    gap: 50px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+
+  .package_div:hover {
+    cursor: pointer;
+    border: 1px solid rgb(241, 237, 237);
+    transform: scale(1.1);
+    transition: all 0.8s ease-in-out;
+  }
+
+  .package_div h5 {
+    margin-left: 8px;
+    margin-top: -15px;
+  }
+
+  .package_div h2 {
+    margin-left: 8px;
+  }
+
+  .trainers_div {
+    /* border: 1px solid black; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+    margin: auto;
+  }
+
+  .trainers_div img {
+    width: 90%;
+    margin: auto;
+    /* border: 2px solid red; */
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.8s ease-in-out;
+  }
+
+  .trainers_div div {
+    /* margin-left: 130px; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(35, 35, 92);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: white;
+    overflow: hidden;
+  }
+
+  .trainer_1 h2 {
+    margin-top: 5px;
+  }
+
+  .trainers_div p {
+    margin-top: -15px;
+  }
+
+  .trainers_div div:hover {
+    cursor: pointer;
+    border: 2px solid rgb(241, 237, 237);
+  }
+
+  .trainers_div img:hover {
+    cursor: pointer;
+    /* border: 3px solid rgb(219, 5, 5); */
+    transform: scale(1.1);
+  }
+
+  .main_div {
+    background-color: rgb(20, 20, 57);
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    font-size: 50px;
+  }
+  .package_main {
+    /* border: 2px solid black; */
+    display: block;
+    /* justify-content: space-evenly; */
+    margin: auto;
+    /* height: 300px; */
+  }
+  .package_div {
+    /* border: 1px solid rgb(161, 85, 85); */
+    width: 80%;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 35px;
+    background-color: rgb(35, 35, 92);
+    color: white;
+    height: 150px;
+    font-size: 20px;
+    padding: 20px;
+    margin: auto;
+    gap: 50px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 50px;
+  }
+  .package_div:hover {
+    cursor: pointer;
+    border: 1px solid rgb(241, 237, 237);
+    transform: scale(1.1);
+    transition: all 0.8s ease-in-out;
+  }
+  .package_div h5 {
+    margin-left: 8px;
+    margin-top: -15px;
+  }
+  .package_div h2 {
+    margin-left: 8px;
+  }
+  .trainers_div {
+    /* border: 1px solid black; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    margin-top: 50px;
+    margin: auto;
+  }
+  .trainers_div img {
+    width: 250px;
+    border-radius: 20px;
+    margin-top: 30px;
+    transition: all 0.8s ease-in-out;
+  }
+  .trainers_div div {
+    /* margin-left: 130px; */
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: rgb(35, 35, 92);
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    color: white;
+    overflow: hidden;
+  }
+  .trainer_1 h2 {
+    margin-top: 5px;
+  }
+  .trainers_div p {
+    margin-top: -15px;
+  }
+  .trainers_div div:hover {
+    cursor: pointer;
+    border: 2px solid rgb(241, 237, 237);
+  }
+  .trainers_div img:hover {
+    cursor: pointer;
+    /* border: 3px solid rgb(219, 5, 5); */
+    transform: scale(1.1);
+  }
+  .main_div {
+    background-color: rgb(20, 20, 57);
+    height: 100%;
+  }
 }
