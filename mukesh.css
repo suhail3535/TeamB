@@ -31,7 +31,7 @@ body {
 
 .programs1 span {
   border-radius: 10px;
-  margin-top: 60px;
+  margin-top: 20px;
   margin-right: 10px;
   width: 50px;
   height: 50px;
@@ -168,14 +168,10 @@ body {
   }
 
   .program_card {
-    width: 95%;
+    width: 85%;
     margin: 10px auto;
     padding: 15px;
   }
-
-  /* .program_card span {
-        margin-left: 140px;
-    } */
 
   .about_main {
     width: 100%;
@@ -259,7 +255,7 @@ nav {
   justify-content: space-evenly;
   background-color: rgb(0, 128, 255);
   position: sticky;
-  top: 0px;
+  top: 0;
   z-index: 1;
 }
 .p_div {
@@ -268,6 +264,7 @@ nav {
   justify-content: start;
   width: 20%;
   transition: all 1s ease-in-out;
+  margin-top: 30px;
 }
 .p_div:hover {
   cursor: pointer;
@@ -330,7 +327,7 @@ nav {
 .first_main {
   /* border: 1px solid blue; */
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   width: 55%;
   /* padding: 5px; */
 }
@@ -342,7 +339,7 @@ nav {
 }
 
 #ptwo {
-  font-size: 45px;
+  font-size: 40px;
   color: white;
   font-weight: bold;
 }
@@ -357,7 +354,7 @@ nav {
 
 .button {
   /* border: 1px solid red; */
-  width: 45%;
+  width: 30%;
   padding: 10px;
   /* height: 50px; */
   text-align: center;
@@ -366,6 +363,7 @@ nav {
   color: whitesmoke;
   font-size: large;
   transition: all 0.4s ease-in-out;
+  margin-top: 40px;
 }
 .button:hover {
   cursor: pointer;
@@ -374,7 +372,7 @@ nav {
 .second_div {
   /* border: 1px solid rgb(3, 248, 97); */
   width: 45%;
-  padding: 6%;
+  /* padding: 6%; */
 }
 .circle_div {
   /* border: 1px solid rebeccapurple; */
@@ -442,7 +440,7 @@ nav {
   }
   .button {
     width: 50%;
-    margin: auto;
+    margin:30px auto;
     font-size: 20px;
     padding: 10px;
   }
@@ -450,19 +448,19 @@ nav {
   .second_div {
     display: block;
     padding: 20px;
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
     /* border: 1px solid red; */
-    height: 400px;
+    height: 300px;
     margin-top: 20px;
   }
   .circle_div {
     display: block;
-    width: 55%;
+    width: 42%;
     margin: auto;
     height: 200px;
-    margin-left: 10px;
+    margin-left: 45px;
   }
   .image_div {
     display: block;
@@ -475,10 +473,14 @@ nav {
   .image_div img{
     width: 100%;
   }
+  .p_div{
+    margin-top: 0px;
+  }
   #ptwo {
     font-size: 25px;
     color: white;
     font-weight: bold;
+
   }
   #p {
     font-size: 20px;
@@ -523,6 +525,9 @@ nav {
   }
   .img_Container img:hover {
     transform: scale(1.1);
+  }
+  .p_div{
+    margin-top: 0px;
   }
 }
 
@@ -818,3 +823,94 @@ h1 {
     height: 100%;
   }
 }
+/* <---------manoj css--------> */
+
+        footer{
+            background-color: rgb(20,20,57);
+            display: flex;
+             justify-content: space-around;
+             padding: 20px;
+             border: 1px dashed aliceblue;
+margin-top: 50px;
+        }
+        footer div{
+            width: 22%;
+            text-align: center;
+        }
+        .Ist_div{
+            text-align: center;
+            color: aliceblue;
+        }
+        .logo_div{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            place-items: center;
+        }
+        .logo_img{
+            width: 40%;
+
+            margin: 10px;
+
+
+
+        }
+        .logo_img img{
+            width: 100%;
+        }
+        p{
+            font-size: 18px;
+            margin: 0px;
+            color: rgb(208, 208, 251);
+
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        h3{
+            color: rgb(208, 208, 251);
+            margin: 10px;
+        }
+        .last_div{
+
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .last_div img{
+            width: 25%;
+        }
+        input{
+            width: 50%;
+            height: 25PX;
+            border-radius: 5PX;
+        }
+        @media screen and (min-width:200px) and (max-width:720px) {
+            footer{
+
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        footer div{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+
+        }
+        .Ist_div{
+            /* border: 1px solid aliceblue; */
+        }
+       .second_div{
+        /* border: 1px solid aliceblue; */
+       }
+       .thrd_div{
+        /* border: 1px solid aliceblue; */
+       }
+       .forth_div{
+        /* border: 1px solid aliceblue; */
+       }
+    }
+
