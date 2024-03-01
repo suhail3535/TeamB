@@ -257,6 +257,9 @@ nav {
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(0, 128, 255);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 .p_div {
   /* border:  1px solid red; */
@@ -794,3 +797,94 @@ h1 {
     height: 100%;
   }
 }
+/* <---------manoj css--------> */
+
+        footer{
+            background-color: rgb(20,20,57);
+            display: flex;
+             justify-content: space-around;
+             padding: 20px;
+             border: 1px dashed aliceblue;
+margin-top: 50px;
+        }
+        footer div{
+            width: 22%;
+            text-align: center;
+        }
+        .Ist_div{
+            text-align: center;
+            color: aliceblue;
+        }
+        .logo_div{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            place-items: center;
+        }
+        .logo_img{
+            width: 40%;
+
+            margin: 10px;
+
+
+
+        }
+        .logo_img img{
+            width: 100%;
+        }
+        p{
+            font-size: 18px;
+            margin: 0px;
+            color: rgb(208, 208, 251);
+
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        h3{
+            color: rgb(208, 208, 251);
+            margin: 10px;
+        }
+        .last_div{
+
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .last_div img{
+            width: 25%;
+        }
+        input{
+            width: 50%;
+            height: 25PX;
+            border-radius: 5PX;
+        }
+        @media screen and (min-width:200px) and (max-width:720px) {
+            footer{
+
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+
+        }
+        footer div{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+
+        }
+        .Ist_div{
+            border: 1px solid aliceblue;
+        }
+       .second_div{
+        border: 1px solid aliceblue;
+       }
+       .thrd_div{
+        border: 1px solid aliceblue;
+       }
+       .forth_div{
+        border: 1px solid aliceblue;
+       }
+    }
+
