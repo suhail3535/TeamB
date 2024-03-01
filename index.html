@@ -4,8 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        footer{
+            background-color: rgb(20,20,57);
+            display: flex;
+             justify-content: space-around;
+             padding: 20px;
+             border: 1px dashed aliceblue;
+             
+        }
+        footer div{
+            width: 22%;
+            text-align: center;
+        }
+        .Ist_div{
+            text-align: center;
+            color: aliceblue;
+        }
+        .logo_div{
+            display: grid;
+           grid-template-columns: repeat(3,1fr);
+            width: 100%;
+            place-items: center;
+        }
+        .logo_img{
+            width: 40%;
+
+            margin: 10px;
+
+            
+
+        }
+        .logo_img img{
+            width: 100%;
+        }
+        p{
+            font-size: 18px;
+            margin: 0px;    
+            color: rgb(208, 208, 251);        
+            
+        }
+        h1{
+            font-size: 60px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        h3{
+            color: rgb(208, 208, 251); 
+            margin: 10px;
+        }
+        .last_div{
+        
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .last_div img{
+            width: 25%;
+        }
+        input{
+            width: 50%;
+            height: 25PX;
+            border-radius: 5PX;
+        }
+        @media screen and (min-width:200px) and (max-width:720px) {
+            footer{
+            
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+        footer div{
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+            
+        }
+        .Ist_div{
+            border: 1px solid aliceblue; 
+        }
+       .second_div{
+        border: 1px solid aliceblue;
+       }
+       .thrd_div{
+        border: 1px solid aliceblue;
+       }
+       .forth_div{
+        border: 1px solid aliceblue;
+       }
+    }
+    </style>
 </head>
 <body>
+    <footer>
+        <div class="Ist_div">
+            <h1>Vawulens</h1>
+            <p>@2023 Ride Adverties. All rights reserved</p>
+            <div class="logo_div">
+                <div class="logo_img">
+                    <img src="./images/twitter logo.png" alt="">
+                </div>
+                <div class="logo_img">
+                    <img src="./images/youtube logo.jpg" alt="">
+                </div>
+                <div class="logo_img">
+                    <img src="./images/instagramm.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="second_div">
+            <h3>Company</h3>
+            <h3>About Us </h3>
+            
+            <h3>Blog</h3>
+            <h3>Contact Us</h3>
+            <h3>Pricing</h3>
+            <h3>Testimonials</h3>
+        </div>
+        <div class="thrd_div">
+            <h3>Support</h4>
+            <h3>Help Center</h3>
+            <h3>Termas of Service</h3>
+            <h3>Legal</h3>
+            <h3>Privacy Policy</h3>
+            <h3>Status</h3>
+        </div>
+        <div class="forth_div">
+            <h3>Stay up to date</h3>
+            <div class="last_div">
+                <input type="email" placeholder="Your email address">
+                <img src="./images/gmail logo.jpg" alt="">
+            </div>
+            
+          
+
+        </div>
+    </footer>
     
 </body>
 </html>
