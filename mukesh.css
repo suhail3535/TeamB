@@ -18,19 +18,20 @@ body {
   width: 100%;
   padding: 10px;
   /* border: 1px solid white; */
+  margin-top: 15px;
 }
 
 .programs1 {
   color: white;
   display: flex;
-  padding: 5px;
+  /* padding: 5px; */
   /* border: 1px solid white; */
   width: 100%;
 }
 
 .programs1 span {
   border-radius: 10px;
-  margin-top: 20px;
+  margin-top: 60px;
   margin-right: 10px;
   width: 50px;
   height: 50px;
@@ -169,7 +170,7 @@ body {
   .program_card {
     width: 95%;
     margin: 10px auto;
-    padding: 5px;
+    padding: 15px;
   }
 
   /* .program_card span {
@@ -257,6 +258,9 @@ nav {
   display: flex;
   justify-content: space-evenly;
   background-color: rgb(0, 128, 255);
+  position: sticky;
+  top: 0px;
+  z-index: 1;
 }
 .p_div {
   /* border:  1px solid red; */
@@ -319,21 +323,22 @@ nav {
   margin: auto;
   display: flex;
   /* justify-content: space-evenly; */
-  padding: 90px;
+  padding: 10px;
   /* background-color:rgb(20,20,57) */
+  /* line-height: 30px; */
 }
 .first_main {
   /* border: 1px solid blue; */
   display: flex;
   /* align-items: center; */
   width: 55%;
-  padding: 10px;
+  /* padding: 5px; */
 }
 .first_flex {
   /* border: 1px solid lawngreen; */
-  padding: 20px;
+  padding: 10px;
   width: 90%;
-  margin: 150px;
+  margin: 100px;
 }
 
 #ptwo {
@@ -346,18 +351,20 @@ nav {
 }
 #pone {
   color: rgb(175, 175, 208);
+  font-size: 20px;
+  text-align: justify;
 }
 
 .button {
   /* border: 1px solid red; */
-  width: 25%;
-  padding: 20px;
+  width: 45%;
+  padding: 10px;
   /* height: 50px; */
   text-align: center;
   border-radius: 30px;
   background-color: rgb(0, 128, 255);
   color: whitesmoke;
-  font-size: larger;
+  font-size: large;
   transition: all 0.4s ease-in-out;
 }
 .button:hover {
@@ -367,7 +374,7 @@ nav {
 .second_div {
   /* border: 1px solid rgb(3, 248, 97); */
   width: 45%;
-  /* padding: 6%; */
+  padding: 6%;
 }
 .circle_div {
   /* border: 1px solid rebeccapurple; */
@@ -431,30 +438,47 @@ nav {
     width: 90%;
     margin: auto;
     line-height: opx;
+    font-size: 25px;
   }
   .button {
+    width: 50%;
     margin: auto;
+    font-size: 20px;
+    padding: 10px;
   }
 
   .second_div {
     display: block;
-    padding: 30px;
+    padding: 20px;
     width: 90%;
     margin: auto;
     text-align: center;
+    /* border: 1px solid red; */
+    height: 400px;
+    margin-top: 20px;
   }
   .circle_div {
     display: block;
     width: 55%;
     margin: auto;
+    height: 200px;
+    margin-left: 10px;
   }
   .image_div {
     display: block;
-    width: 90%;
+    width: 95%;
     margin: auto;
     position: relative;
-    bottom: 230px;
-    left: -70px;
+    bottom: 200px;
+    left: -30px;
+  }
+  .image_div img{
+    width: 100%;
+  }
+  #ptwo {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
   }
   #p {
     font-size: 20px;
