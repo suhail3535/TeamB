@@ -60,7 +60,7 @@ background-color: rgb(65, 119, 228);
 font-size: 20px;
 transition: all 1s ease-in;
 }
-button:hover{
+.contact_1 button~:hover{
 cursor: pointer;
 background-color: orange;
 }
