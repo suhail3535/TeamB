@@ -12,7 +12,10 @@
     margin: 80px;
     
  }
-
+label{
+    color: rgb(20, 229, 69);
+  font-size: large;
+}
  .contactus{
  
     
@@ -20,7 +23,7 @@
     justify-content: center;
     padding-right: 510px;
  }
- span{
+   .contactus span{
     
     color: white;
     font-size: 45px;
@@ -32,7 +35,7 @@
      font-size: 60px;
      color: white;
  }
-input{
+#input{
 width: 706px;
 height: 30px;
 border-radius: 10px;
@@ -47,7 +50,7 @@ font-size: large;
 padding-left: 20px;
 
 }
-button{
+.contact_1 button{
 height: 50px ;
 width: 30%;
 margin-top: 20px;
@@ -98,8 +101,8 @@ transition: all 4s ease-in;
    
     margin-right: 60px;
  }
- span{
-    
+ .contactus span{
+   
     color: white;
     font-size: 35px;
      padding: 0;
@@ -116,7 +119,7 @@ transition: all 4s ease-in;
      text-align: center;
   
  }
-input{
+#input{
 width: 250px;
 height: 30px;
 
@@ -144,13 +147,13 @@ transition: all 4s ease-in;
  border-radius: 20px;
 
 }
-.button{
+#button{
 text-align: center;
 margin-right: 50px;
  
  
 }
-button{
+.contact_1 button{
 width: 60%;
 }
 
@@ -163,7 +166,7 @@ width: 60%;
      display: flex;
      flex-direction: column-reverse;
  }
- span{
+ .contactus span{
     
     color: white;
     font-size: 45px;
@@ -175,7 +178,7 @@ width: 60%;
      color: white;
      text-align: center;
  }
-input{
+#input{
 width: 600px;
 height: 30px;
 
@@ -210,14 +213,14 @@ padding: 00px;
 margin-top: 10px;
 
 }
-.button{
+#button{
     width: 120%;
 text-align: center;
 margin-right: 100px;
 padding-left: 120px;
 
 }
-button{
+.contact_1 button{
 width: 100%;
 }
 
