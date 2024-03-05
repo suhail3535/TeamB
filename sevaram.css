@@ -13,22 +13,24 @@
     
  }
 label{
-    color: rgb(20, 229, 69);
+    color: rgb(241, 246, 242);
   font-size: large;
 }
  .contactus{
  
     
     display: flex;
-    justify-content: center;
-    padding-right: 510px;
+   
+    
+    
  }
    .contactus span{
     
+    
     color: white;
     font-size: 45px;
-  
-    padding-top: 48px;
+   margin-left: 10PX;
+    padding-top: 45px;
  }
  h1{
 
@@ -37,7 +39,7 @@ label{
  }
 #input{
 width: 706px;
-height: 30px;
+height:30px;
 border-radius: 10px;
 font-size: large;
 padding-left: 20px;
@@ -56,13 +58,15 @@ width: 30%;
 margin-top: 20px;
 border-radius: 10px;
 color: white;
+border: none;
 background-color: rgb(65, 119, 228);
 font-size: 20px;
 transition: all 1s ease-in;
 }
-.contact_1 button~:hover{
+.contact_1 button:hover{
 cursor: pointer;
 background-color: orange;
+ 
 }
 img{
 height: 500px;
@@ -92,14 +96,11 @@ transition: all 4s ease-in;
  .contact_1{
     width: 90%;
     margin: 00px;
-     
     padding-left: 50px;
  }
- .contactus{
-    
+ .contactus{ 
     padding: 00px;
-   
-    margin-right: 60px;
+    margin-right:60px;
  }
  .contactus span{
    
@@ -132,8 +133,8 @@ width: 250px;
 }
 
 
-img{
-height: 200px;
+.contact_img img{
+height:200px;
 width: 100%;
 border-radius: 15px;
 
@@ -188,7 +189,7 @@ height: 140px;
 width: 600px;  
 }
 
-img{
+ .contact_img img{
 height: 280px;
 width: 740px;
 border-radius: 15px;
@@ -206,10 +207,9 @@ border-radius: 15px;
 }
 
 .contact_img{
-    border-radius: 20px;
     width: 99%;
-padding: 00px;
- 
+    border-radius: 20px;
+padding: 00px; 
 margin-top: 10px;
 
 }
